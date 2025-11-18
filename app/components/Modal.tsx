@@ -76,7 +76,7 @@ type FType = {
 function FAQDIV({ setFAQ }: FType) {
   return (
     <div
-      className="w-124 h-155 rounded-l-lg bg-white p-7 overflow-auto"
+      className="md:w-124 w-auto h-155 rounded-l-lg bg-white p-7 overflow-auto"
       onClick={(e: React.MouseEvent) => e.stopPropagation()}
     >
       <div className="text-xl font-semibold">{WData[0].title}</div>
@@ -128,7 +128,7 @@ export default function Modal() {
 
   return (
     <div
-      className="absolute w-full h-full bg-black/50 flex justify-center items-center z-100"
+      className="absolute w-full h-full bg-black/50 flex justify-center items-center-safe z-100 p-5"
       onClick={() => {
         if (isOn) toggle(); // only research modal closes on click
         else if (FAQ) setFAQ(); // FAQ closes only on second click

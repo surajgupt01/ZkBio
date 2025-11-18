@@ -137,7 +137,7 @@ function Card2() {
 
 export default function Cards() {
   return (
-    <div className="w-full flex md:flex-row flex-col justify-between gap-5">
+    <div className="w-full flex md:flex-row flex-col justify-between md:gap-5 gap-1">
       <Card1 />
 
       <Card2 />
