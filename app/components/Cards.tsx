@@ -75,11 +75,11 @@ function Card2() {
           <div className="flex-col items-center text-sm ml-2">
             <span className="font-semibold">Dr. K. Anil Kumar</span>
             <br></br>
-            <span className="text-gray-500 text-xs flex items-center">
+            <div className="text-gray-500 md:text-xs text-[10px] h-auto wrap-break-word flex justify-center items-center">
               Industrial Research{" "}
               <p className="rounded-full w-[3px] h-[3px] bg-gray-500 ml-1 mr-1"></p>{" "}
               30 + years
-            </span>
+            </div>
           </div>
         </div>
         <button className="font-semibold text-white bg-[#48bb78] w-30 h-7 md:text-[13px] text-[10px]  rounded-md">
@@ -95,7 +95,7 @@ function Card2() {
           <div className="flex-col items-center text-sm ml-2">
             <span className="font-semibold">Dr. G. GopiKrishna</span>
             <br></br>
-            <div className="text-gray-500 text-xs sm:text-[10px] flex  items-center">
+            <div className="text-gray-500 text-xs sm:text-[10px] flex justify-center h-auto wrap-break-word  items-center">
               Organic Chemistry{" "}
               <p className="rounded-full w-[3px] h-[3px] bg-gray-500 ml-1 mr-1"></p>{" "}
               23 + years
