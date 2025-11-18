@@ -10,7 +10,7 @@ type RType = {
 function ResearchDivs({ index, toggle }: RType) {
   return (
     <div
-      className="md:w-124 w-auto md:h-155  h-[80vh] rounded-l-lg bg-white p-7 overflow-auto"
+      className="md:w-124 w-auto md:h-155 md:mt-13 mt-19  h-[80vh] rounded-l-lg bg-white p-7 overflow-auto"
       onClick={(e: React.MouseEvent) => e.stopPropagation()}
     >
       <div className="text-xl font-semibold">{modalData[index].title}</div>
@@ -76,7 +76,7 @@ type FType = {
 function FAQDIV({ setFAQ }: FType) {
   return (
     <div
-      className="md:w-124 w-auto md:h-155 h-[80vh] rounded-l-lg bg-white p-7 overflow-auto"
+      className="md:w-124 w-auto md:h-155 md:mt-13 mt-19 h-[80vh] rounded-l-lg bg-white p-7 overflow-auto"
       onClick={(e: React.MouseEvent) => e.stopPropagation()}
     >
       <div className="text-xl font-semibold">{WData[0].title}</div>
@@ -128,7 +128,7 @@ export default function Modal() {
 
   return (
     <div
-      className="absolute w-full h-full bg-black/50 flex justify-center items-center-safe z-100 p-5"
+      className="absolute w-full h-full bg-black/50 flex justify-center items-start z-100 p-5"
       onClick={() => {
         if (isOn) toggle(); // only research modal closes on click
         else if (FAQ) setFAQ(); // FAQ closes only on second click
