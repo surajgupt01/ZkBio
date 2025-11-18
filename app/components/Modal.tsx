@@ -10,7 +10,7 @@ type RType = {
 function ResearchDivs({ index, toggle }: RType) {
   return (
     <div
-      className="md:w-124 w-auto md:h-155 md:mt-13 mt-19  h-[80vh] rounded-l-lg bg-white p-7 overflow-auto"
+      className="md:w-124 w-auto md:h-155 md:mt-13 mt-19  h-[80vh] md:rounded-l-lg rounded-lg bg-white p-7 overflow-auto"
       onClick={(e: React.MouseEvent) => e.stopPropagation()}
     >
       <div className="text-xl font-semibold">{modalData[index].title}</div>
@@ -76,7 +76,7 @@ type FType = {
 function FAQDIV({ setFAQ }: FType) {
   return (
     <div
-      className="md:w-124 w-auto md:h-155 md:mt-13 mt-19 h-[80vh] rounded-l-lg bg-white p-7 overflow-auto"
+      className="md:w-124 w-auto md:h-155 md:mt-13 mt-19 h-[80vh] md:rounded-l-lg rounded-lg bg-white p-7 overflow-auto"
       onClick={(e: React.MouseEvent) => e.stopPropagation()}
     >
       <div className="text-xl font-semibold">{WData[0].title}</div>
